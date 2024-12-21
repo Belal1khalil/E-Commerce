@@ -59,7 +59,7 @@ export default function Signup() {
     return <>
     <h1 
     className="text-xl  text-slate-700 font-semibold mb-5">
-        <i className="fa-regular fa-user mr-2"></i> 
+        <i className="fa-regular fa-user mr-2 ml-2 md:ml-0"></i> 
            Register Now
         </h1>
         <form className="space-y-3" onSubmit={formik.handleSubmit}>
@@ -67,7 +67,7 @@ export default function Signup() {
             <input 
             type="text" 
             placeholder="Type your name" 
-            className="form-control w-full"
+            className="form-control w-[365px] ml-3 md:w-full md:ml-0"
             value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -84,7 +84,7 @@ export default function Signup() {
             <input 
             type="email" 
             placeholder="Email Address" 
-            className="form-control w-full"
+            className="form-control w-[365px] ml-3 md:w-full md:ml-0"
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -106,7 +106,7 @@ export default function Signup() {
             <input 
             type="password" 
             placeholder="Enter password" 
-            className="form-control w-full"
+            className="form-control w-[365px] ml-3 md:w-full md:ml-0"
             value={formik.values.password}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -123,7 +123,7 @@ export default function Signup() {
             <input 
             type="password" 
             placeholder="Confirm password" 
-            className="form-control w-full"
+            className="form-control w-[365px] ml-3 md:w-full md:ml-0"
             value={formik.values.rePassword}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -140,7 +140,7 @@ export default function Signup() {
             <input 
             type="tel" 
             placeholder="Phone number" 
-            className="form-control w-full"
+            className="form-control w-[365px] ml-3 md:w-full md:ml-0"
             value={formik.values.phone}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -153,7 +153,7 @@ export default function Signup() {
             * {formik.errors.phone}</p>
             }
         </div>
-        <button type="submit" className="btn w-full uppercase text-white bg-primary-700 hover:bg-primary-800">Sign Up</button>
+        <button type="submit" className="btn ml-1 w-[380px] md:w-full md:ml-0 uppercase text-white bg-primary-700 hover:bg-primary-800">Sign Up</button>
         </form>
     </>
     

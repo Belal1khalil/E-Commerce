@@ -66,10 +66,10 @@ export default function Login() {
     return <>
     <h1 
     className="text-xl   text-slate-700 font-semibold mb-5">
-        <i className="fa-regular fa-user mr-2"></i> 
-           Register Now
+        <i className="fa-regular fa-user mr-2 ml-2 md:ml-0"></i> 
+           Log in
         </h1>
-        <form className="space-y-3 border-2 border-primary-500 px-4 py-3 rounded-md shadow-lg" onSubmit={formik.handleSubmit}>
+        <form className="space-y-3  px-4 py-3 rounded-md shadow-lg" onSubmit={formik.handleSubmit}>
         <div className="email">
             <input 
             type="email" 
