@@ -27,6 +27,15 @@ import ResetPassword from "./pages/ResetPassword/ResetPassword";
 
 export default function App() {
   const router = createBrowserRouter([
+    {
+      path:"/login", element:
+      <GuestRoute>
+      <Layout />
+    </GuestRoute>,
+    children: [
+      {path:"/login", element:<Login/>},
+    ]
+    },
     {path:"/", element:
         <ProtectedRoute>  
            <Layout />
